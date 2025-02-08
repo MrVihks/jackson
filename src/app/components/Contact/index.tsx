@@ -14,6 +14,13 @@ export default function Contact() {
             Contact us via WhatsApp or your preferred channel and receive fast
             and personalized service.
           </p>
+          <div>
+                <img 
+                  src="LC-logomarca.svg" 
+                  width={360} 
+                  alt="luhs cleaning logo-marca" 
+                  className="contact-info-background"/>
+          </div>
         </article>
         <article className="contact-qr">
           <h3>Don&apos;t waste time!</h3>

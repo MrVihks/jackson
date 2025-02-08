@@ -1,6 +1,6 @@
 
 .contact {
-    background-image: url("../public/background-contact.png");
+    background-image: url("../public/background-contact.webp");
     background-size: cover;
     background-position: center;
     justify-content: space-around;
@@ -31,6 +31,18 @@
     background: linear-gradient(rgb(238, 238, 238),rgb(216, 216, 216));
 }
 
+.contact-info-background {
+    max-width:100%;
+    position: relative;
+    margin-top: -200px;
+    padding: 0;
+    z-index: 0;
+    opacity: 0.5;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    transform: translate(0, -100px);
+}
+
 .contact-qr {
     background: linear-gradient(#363232, #544E4E);
     color: #D9D9D9;
@@ -45,6 +57,8 @@
     margin-bottom: 1rem;
     font-size: 1.7em;
     color: #1D1D1D;
+    position: relative;
+    z-index: 1;
 }
 
 .contact-qr img {
@@ -67,24 +81,58 @@
     .contact {
         padding: 5rem
     }
-
 }
 
 @media (max-width: 940px) {
-    .contact {
-        padding: 8rem 0;
+
+    .contact p {
+        font-size: 1.1em;
+    }
+    .contact-info, .contact-qr {
+        min-width: auto;
+        padding: 0 1rem;
+        align-items: center;
+    }
+    .contact-info-background {
+        max-width: 280px;
+        transform: translate(0, -30px);
+    }
+    .contact-qr img {
+        max-width: 150px;
     }
 }
 
-@media (max-width: 685px) {
+@media (max-width: 620px) {
     .contact {
-        padding: 15rem 0;
+        padding: 25rem 0 0;
+    }
+    .contact-info-background {
+        max-width: 190px;
+        transform: translate(0, -80px);
+    }
+    .contact-qr img {
+        max-width: 80px;
     }
 }
-
 
 @media (max-width: 531px) {
-    .contact {
-        padding: 20rem 0 30rem;
+    .contact h3 {
+        font-size: 1em;
+    }
+    .contact p {
+        font-size: 1em;
+    }
+    .contact-qr img {
+        max-width: 80px;
+    }
+}
+
+@media (max-width: 424px) {
+    .contact-info-background {
+        max-width: 150px;
+        transform: translate(0, -120px);
+    }
+    .contact-qr img {
+        max-width: 60px;
     }
 }
